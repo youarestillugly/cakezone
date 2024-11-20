@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cake shop- Cakery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Custom Order Form */
+        .order-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+    
+        .order-form h3 {
+            font-size: 1.5rem;
+            color: #E88F2A;
+            margin-bottom: 20px;
+        }
+    
+        .order-form .form-control {
+            border-radius: 5px;
+            padding: 12px;
+            border: 1px solid #ced4da;
+        }
+    
+        .order-form .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+    
+        .order-form .form-label {
+            font-weight: bold;
+            color: #333;
+        }
+    
+        .order-form .btn-submit {
+            background-color: #E88F2A;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+    
+        .order-form .btn-submit:hover {
+            background-color: #000000;
+            transform: translateY(-2px);
+        }
+    
+        .order-form select.form-control {
+            font-size: 1rem;
+        }
+    
+        .order-form textarea.form-control {
+            font-size: 1rem;
+        }
+    
+        /* Responsive Design for Order Form */
+        @media (max-width: 768px) {
+            .order-form {
+                padding: 20px;
+            }
+    
+            .order-form .form-control {
+                font-size: 1rem;
+            }
+    
+            .order-form h3 {
+                font-size: 1.25rem;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .order-form {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <a href="mailto:justlittletoxic@gmail.com" style="color: inherit; text-decoration: none;">
+                            justlittletoxic@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-primary border-inner py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>Cakery</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>17493809/ 17616411</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>CakeZone</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="menu.html" class="nav-item nav-link active">Menu & Pricing</a>
+                <a href="team.html" class="nav-item nav-link">Master Chefs</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="service.html" class="dropdown-item">Our Service</a>
+                        <a href="testimonial.html" class="dropdown-item">Reviews</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Shop Cakes</h1>
+        <p class="text-center">Fill in your details and select a cake for your special occasion!</p>
+
+        <div class="row mb-5">
+            <!-- Birthday Cake -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cake 2.webp" class="card-img-top" alt="Birthday Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">Delicious and colorful cakes for birthdays. <strong>Price: 3000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Birthday Cake" data-price="3000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cake3.jpg" class="card-img-top" alt="Birthday Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">Delicious and colorful cakes for birthdays. <strong>Price: 500</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Birthday Cake" data-price="500">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cake3.jpg" class="card-img-top" alt="Birthday Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">Delicious and colorful cakes for birthdays. <strong>Price: 2000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Birthday Cake" data-price="2000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cake4.jpg" class="card-img-top" alt="Birthday Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">Delicious and colorful cakes for birthdays. <strong>Price: 1300</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Birthday Cake" data-price="1300">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cake5.webp" class="card-img-top" alt="Birthday Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">Delicious and colorful cakes for birthdays. <strong>Price: 3500</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Birthday Cake" data-price="3500">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cake6.jpg" class="card-img-top" alt="Birthday Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Cake</h5>
+                        <p class="card-text">Delicious and colorful cakes for birthdays. <strong>Price: 2500</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Birthday Cake" data-price="2500">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding Cake -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="wedding1.jpg" class="card-img-top" alt="Wedding Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Wedding Cake</h5>
+                        <p class="card-text">Elegant cakes for weddings. <strong>Price: 5000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Wedding Cake" data-price="5000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="wedding2.avif" class="card-img-top" alt="Wedding Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Wedding Cake</h5>
+                        <p class="card-text">Elegant cakes for weddings. <strong>Price: 10000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Wedding Cake" data-price="10000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="wedding3.jpg" class="card-img-top" alt="Wedding Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Wedding Cake</h5>
+                        <p class="card-text">Elegant cakes for weddings. <strong>Price: 15000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Wedding Cake" data-price="15000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="wedding4.jpg" class="card-img-top" alt="Wedding Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Wedding Cake</h5>
+                        <p class="card-text">Elegant cakes for weddings. <strong>Price: 20000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Wedding Cake" data-price="20000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="wedding5.jpg" class="card-img-top" alt="Wedding Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Wedding Cake</h5>
+                        <p class="card-text">Elegant cakes for weddings. <strong>Price: 25000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Wedding Cake" data-price="25000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Custom Cake -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="custom1.webp" class="card-img-top" alt="Custom Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Cake</h5>
+                        <p class="card-text">Create your own design. <strong>Price: 1200</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Custom Cake" data-price="1200">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="custom2.jpg" class="card-img-top" alt="Custom Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Cake</h5>
+                        <p class="card-text">Create your own design. <strong>Price: 1500</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Custom Cake" data-price="1500">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="custom3.webp" class="card-img-top" alt="Custom Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Cake</h5>
+                        <p class="card-text">Create your own design. <strong>Price: 1500</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Custom Cake" data-price="1500">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="custom4.jpg" class="card-img-top" alt="Custom Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Cake</h5>
+                        <p class="card-text">Create your own design. <strong>Price: 2000</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Custom Cake" data-price="2000">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="custom5.jpg" class="card-img-top" alt="Custom Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Cake</h5>
+                        <p class="card-text">Create your own design. <strong>Price: 2200</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Custom Cake" data-price="2200">Select</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="custom6.avif" class="card-img-top" alt="Custom Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Cake</h5>
+                        <p class="card-text">Create your own design. <strong>Price: 2500</strong></p>
+                        <button class="btn btn-primary select-cake" data-cake="Custom Cake" data-price="2500">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Form -->
+        <div class="order-form">
+            <h3 class="mb-3">Order Details</h3>
+            <form id="orderForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="contact" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="selectedCake" class="form-label">Selected Cake</label>
+                    <input type="text" class="form-control" id="selectedCake" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="totalPrice" class="form-label">Total Price</label>
+                    <input type="text" class="form-control" id="totalPrice" readonly>
+                </div>
+                <button type="submit" class="btn btn-submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Order Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Order Your Custom Cake</h2>
+    <p class="text-center mb-5">Fill in the details below to order a custom cake for your special occasion!</p>
+
+    <div class="order-form">
+        <h3 class="mb-3">Cake Order Details</h3>
+        <form id="customOrderForm">
+            <!-- Cake Type Selection -->
+            <div class="mb-3">
+                <label for="cakeType" class="form-label">Select Cake Type</label>
+                <select class="form-control" id="cakeType" required>
+                    <option value="Birthday Cake">Birthday Cake</option>
+                    <option value="Wedding Cake">Wedding Cake</option>
+                    <option value="Custom Cake">Custom Cake</option>
+                </select>
+            </div>
+
+            <!-- Design Description -->
+            <div class="mb-3">
+                <label for="designDescription" class="form-label">Cake Design Description</label>
+                <textarea class="form-control" id="designDescription" rows="3" placeholder="Describe your cake design (flavors, decorations, etc.)" required></textarea>
+            </div>
+
+            <!-- Special Instructions -->
+            <div class="mb-3">
+                <label for="specialInstructions" class="form-label">Special Instructions (Optional)</label>
+                <textarea class="form-control" id="specialInstructions" rows="3" placeholder="Any special instructions for your order?"></textarea>
+            </div>
+
+            <!-- Delivery Details -->
+            <div class="mb-3">
+                <label for="deliveryDate" class="form-label">Preferred Delivery Date</label>
+                <input type="date" class="form-control" id="deliveryDate" required>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Place Order</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-img text-secondary" style="margin-top: 90px">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 mb-lg-n5">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary border-inner p-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>Cakery</h1>
+                    </a>
+                    <p class="mt-3">A cakery is a bakery specializing in beautifully crafted cakes and sweet treats for special occasions, often offering custom designs and dietary options.</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <h4 class="text-primary text-uppercase mb-4">Get In Touch</h4>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">Kanglung, Sherubtse</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0">justlittletoxic@gmail.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">17948009</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="https://x.com/i/flow/login?redirect_after_login=%2Fsherubtsecol"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="https://www.facebook.com/sherubtsecollege/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="https://bt.linkedin.com/company/sherubtse-college-bhutan"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <h4 class="text-primary text-uppercase mb-4">Quick Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                            <a class="text-secondary mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                            <a class="text-secondary mb-2" href="team.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                            <a class="text-secondary mb-2" href="latestblog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                            <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <h4 class="text-primary text-uppercase mb-4">Newsletter</h4>
+                        <p>Stay updated with the latest news, promotions, and special offers from CakeZone. Subscribe to our newsletter and never miss out!</p>
+                        <form action="newsletter_signup.php" method="POST">
+                            <div class="input-group">
+                                <input type="email" name="email" class="form-control border-white p-3" placeholder="Enter your email" required>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // DOM Manipulation for Cake Selection
+    document.querySelectorAll('.select-cake').forEach(button => {
+        button.addEventListener('click', function () {
+            const selectedCake = this.getAttribute('data-cake');
+            const selectedPrice = this.getAttribute('data-price');
+            document.getElementById('selectedCake').value = selectedCake;
+            document.getElementById('totalPrice').value = `Nu ${selectedPrice}`;
+        });
+    });
+
+    // Form Submission Handler
+    document.getElementById('orderForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const contact = document.getElementById('contact').value;
+        const address = document.getElementById('address').value;
+        const selectedCake = document.getElementById('selectedCake').value;
+        const totalPrice = document.getElementById('totalPrice').value;
+
+        if (name && contact && address && selectedCake) {
+            alert(`Thank you, ${name}! Your order for a ${selectedCake} has been placed.\nTotal Price: ${totalPrice}`);
+        } else {
+            alert('Please fill in all the details.');
+        }
+    });
+</script>
+<script>
+    // Handle form submission
+    document.getElementById('customOrderForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        
+        // Get values from the form fields
+        const cakeType = document.getElementById('cakeType').value;
+        const designDescription = document.getElementById('designDescription').value;
+        const specialInstructions = document.getElementById('specialInstructions').value;
+        const deliveryDate = document.getElementById('deliveryDate').value;
+
+        // Validate if all required fields are filled
+        if (!cakeType || !designDescription || !deliveryDate) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+
+        // Display the order details in an alert (this can be replaced with any other logic, e.g., submitting to a backend)
+        const orderDetails = `
+            Cake Type: ${cakeType}
+            Design Description: ${designDescription}
+            Special Instructions: ${specialInstructions || 'None'}
+            Delivery Date: ${deliveryDate}
+        `;
+
+        alert("Your custom cake order has been placed successfully! Here are the details:\n\n" + orderDetails);
+
+        // Optionally, reset the form after submission
+        document.getElementById('customOrderForm').reset();
+    });
+</script>
+</body>
+
+</html>
